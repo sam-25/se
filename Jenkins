@@ -1,0 +1,26 @@
+pipeline{
+agent any
+	stages{
+		stage('Clone Git'){
+			steps{
+				git 'https://github.com/sam-25/se.git'
+			}
+		}
+		stage('Run Code'){
+			steps{
+				sh "/usr/bin/python3 program.py"
+			}
+		}
+		stage('Test Code - 1'){
+			steps{
+				sh "/usr/bin/python3 test_all_correct.py"
+			}
+		}
+		stage('Test Code - 2'){
+			steps{
+				sh "/usr/bin/python3 test.py"
+			}
+		}
+	
+	}
+}
