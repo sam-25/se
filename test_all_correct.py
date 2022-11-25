@@ -17,9 +17,6 @@ class TestFactorial(unittest.TestCase):
 	def test_Factorial5(self):
 		result5=factorial(5)
 		self.assertEquals(result5,120)
-	def test_Factorial6(self):
-		result6=factorial(6)
-		self.assertEquals(result6,720)
 
 if __name__ == '__main__':
 	unittest.main()
