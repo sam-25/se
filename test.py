@@ -9,7 +9,7 @@ class TestFactorial(unittest.TestCase):
 		result2=factorial(2)
 		self.assertEquals(result2,2)
 	def test_Factorial3(self):
-		result2=factorial(3)
+		result3=factorial(3)
 		self.assertEquals(result3,6)
 	def test_Factorial4(self):
 		result4=factorial(4)
